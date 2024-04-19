@@ -1,6 +1,6 @@
 
 ## Explanation
-This tool is a wrapper around aws-runas, a tool that handles STS AssumeRole operations. The reason I created this tool is because aws-runas doesn't copy the output to the clipboard. That's it, that's the only reason.
+This tool is a wrapper around "aws-runas", a tool that handles STS AssumeRole operations. The reason I created this tool is because aws-runas doesn't copy the output to the clipboard. That's it, that's the only reason.
 
 This tool will do that, it will utilize aws-runas, do browser based authentication and then filter the output and put it in clipboard, you can then directly paste in the terminal to run the exports.
 
@@ -17,7 +17,15 @@ https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#ge
 https://mmmorris1975.github.io/aws-runas/quickstart.html
 
 
-## Compiling
+## Using the tool
+
+After you have the prerequisites installed, you can download the binary for your operating system and add it to PATH, after that
+you can run the following command to use it.
+```
+aws-role-switcher your-aws-profile  
+```
+
+## Compiling the code yourself
 ### Before
 Make sure you have golang installed and run the following commands:
 ```
@@ -41,7 +49,7 @@ Compile the binary using the following command
 GOOS=windows GOARCH=amd64 go build -o aws-role-switcher.exe aws-role-switcher.go
 ```
 
-## Usage
+## Aws Config file
 Make sure that you have the needed config file
 ## Sample aws config file
  ```
