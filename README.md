@@ -30,23 +30,23 @@ aws-role-switcher your-aws-profile
 Make sure you have golang installed and run the following commands:
 ```
 go mod init aws-role-switcher
-go get github.com/atotto/clipboard
+go mod tidy
 ```
 
 ### Mac
 Compile the binary using the following command
 ```
-GOOS=darwin GOARCH=amd64 go build -o aws-role-switcher aws-role-switcher.go
+GOOS=darwin GOARCH=amd64 go build -o aws-role-switcher
 ```
 ### Linux
 Compile the binary using the following command
 ```
-GOOS=linux GOARCH=amd64 go build -o aws-role-switcher aws-role-switcher.go
+GOOS=darwin GOARCH=amd64 go build -o aws-role-switcher
 ```
 ### Windows
 Compile the binary using the following command
 ```
-GOOS=windows GOARCH=amd64 go build -o aws-role-switcher.exe aws-role-switcher.go
+GOOS=darwin GOARCH=amd64 go build -o aws-role-switcher.exe
 ```
 
 ## Aws Config file
